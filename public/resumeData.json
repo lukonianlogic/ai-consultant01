@@ -1,78 +1,84 @@
 {
   "main": {
-    "name":"Nordic-Giant Project",
-    "description":"I am a web development engineer and I use react and vue.js to develop pages. This project is a resume template that can be used as the project home page or resume page",
-    "image":"profilepic.jpg",
-    "bio":"Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
-    "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
-    "email": "youremailhere@gmail.com",
-    "phone": "555-555-5555",
-    "github":"https://github.com/nordicgiant2/react-nice-resume",
+    "name":"Lucas Longacre",
+    "description":"Experienced and results-driven product manager & full stack developer specializing in crafting innovative solutions for complex challenges, I excel in collaborating with cross-functional teams of engineers and designers to deliver cutting-edge products, particularly in the realm of Generative AI and LLMs. Dedicated to staying at the forefront of technology trends, I bring a proven track record of developing high-quality software solutions that drive business success.",
+    "image":"lucas_colorprofile.jpeg",
+    "bio":"My background in film, video, & writing has given me an advantage when it comes to conceptualizing and building web applications. I have a keen eye for design and a passion for creating engaging user experiences. I am a lifelong learner and am always looking for new challenges and opportunities to grow.",
+    "contactmessage":"How can I help you on your next endeavor.",
+    "email": "lucas.longacre@gmail.com",
+    "phone": "917-916-3979",
+    "github":"https://github.com/lukonianlogic",
     "project":"https://github.com/nordicgiant2/react-nice-resume",
     "address":{
-      "street":"(Your Street)",
-      "city":"(Your City)",
-      "state":"(Your State)",
-      "zip": "(Your Zip/Postal Code)"
+      "street":"22003 Bent Lane",
+      "city":"Star",
+      "state":"Idaho",
+      "zip": "83669"
     },
-    "website": "http://www.timbakerdev.com",
-    "resumedownload":"http://timbakerdev.com",
+    "website": "http://www.lucaslongacre.com",
+    "resumedownload":"LucasLongacreResume.pdf",
     "social":[
       {
         "name":"facebook",
-        "url":"https://github.com/nordicgiant2/react-nice-resume",
+        "url":"https://www.facebook.com/lucas.longacre",
         "className":"fa fa-facebook"
       },
       {
         "name":"twitter",
-        "url":"http://twitter.com",
+        "url":"https://twitter.com/lukonianlogic",
         "className":"fa fa-twitter"
       },
       {
         "name":"linkedin",
-        "url":"https://www.linkedin.com/in/tim-baker-8420009a/",
+        "url":"https://www.linkedin.com/in/lucaslongacre/",
         "className":"fa fa-linkedin"
       },
       {
         "name":"instagram",
-        "url":"http://instagram.com/tbaker_x",
+        "url":"https://www.instagram.com/lukonianlogic/",
         "className":"fa fa-instagram"
       },
       {
         "name":"github",
-        "url":"https://github.com/nordicgiant2/react-nice-resume",
+        "url":"https://github.com/lukonianlogic/",
         "className":"fa fa-github"
       }
     ]
   },
   "resume":{
-    "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
+    "skillmessage":"I am always learning new tools and applications. Here are some of my current favorites.",
     "education":[
       {
-        "school":"University?",
-        "degree":"Masters in Beer tasting",
-        "graduated":"April 2017",
+        "school":"SUNY Buffalo",
+        "degree":"Bachelor of Arts in Media Studies",
+        "graduated":"May 2000",
         "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
       },
       {
-        "school":"School #1 Maybe College?",
-        "degree":"What did you study 101",
-        "graduated":"March 2013",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school":"UT Austin",
+        "degree":"Professional Certificate in Full Stack Software Development",
+        "graduated":"March 2024",
+        "description":"Building Scalable Cloud Applications by the McCombs School of Business,"
       }
     ],
     "work":[
       {
-        "company":"Awesome Design Studio",
-        "title":"Senior UX God ",
-        "years":"March 2018 - Present",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company":"Mebot AI Corp",
+        "title":"Product Manager",
+        "years":"March 2020 - Present",
+        "description":"Designed strategies to engage high value customers based on industry research & data analytics. Successfully led global teams of developers & designers to plan, execute, and deliver projects on time and within scope. Conceptualized innovative Gen AI solutions to improve existing workflows. Researched competitive landscape and adjusted strategy, goals and timelines to reflect Industry changes. Analyzed marketing data to improve UX and overall app design and functionality."
       },
       {
-        "company":"Super Cool Studio",
-        "title":"Junior bug fixer",
-        "years":"March 2017 - February 2018",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company":"Zero Point Reality",
+        "title":"Technical Director",
+        "years":"June 2021 - February 2022",
+        "description":"Produced & Directed VR Experience for AT&T flagship store in downtown San Francisco. Worked with stakeholders to utilize VR to reach new customers & market segments. Coordinated multiple departments on best practices for highest quality VR results. Kept abreast of the latest VR technology and applications to constantly improve the final product. Managed rollout of optimized VR videos across multiple platforms from VR headsets to streaming. Created production workflow to streamline costs and turnaround time for process heavy VR Video"
+      },
+      {
+        "company":"The Original Fare, LLC",
+        "title":"Producer & Technical Lead",
+        "years":"June 2015 - May 2021",
+        "description":"Crafted unique look and format of show within budgetary restraints and delivery timeline. Coordinated delivery of 30 minute episodes for overseas cable distribution conforming to all technical specifications. Worked with clients & stakeholders to repurpose content for multiple outlets including Cable TV, social media & various streaming channels. Collaborated with musicians, audio engineers, graphic designers from concept to final export of each episode. Managed all media processing and archiving. Upgraded equipment & post production studio based on emerging technologies & trends."
       }
     ],
     "skills":[
@@ -81,27 +87,27 @@
         "level":"60%"
       },
       {
-        "name":"VueJs",
-        "level":"55%"
+        "name":"HTML",
+        "level":"80%"
       },
       {
         "name":"ReactJs",
-        "level":"50%"
+        "level":"75%"
       },
       {
         "name":"CSS",
         "level":"90%"
       },
       {
-        "name":"PHP",
+        "name":"MySQL",
         "level":"80%"
       },
       {
-        "name":"Swift",
+        "name":"MongoDB",
         "level":"50%"
       },
       {
-        "name":"JAVA",
+        "name":"NodeJS",
         "level":"80%"
       }
     ]
@@ -109,76 +115,16 @@
   "portfolio":{
     "projects": [
       {
-        "title":"Canadian Wanderlust",
-        "category":"My Travel Blog for my post-university travels",
-        "image":"01.jpg",
-        "url":"https://www.canadianwanderlust.com"
+        "title":"Mebot.ai",
+        "category":"Create and chat with bots",
+        "image":"mebotai.jpg",
+        "url":"https://www.mebot.ai"
       },
       {
-        "title":"Fury Fighting Gear",
-        "category":"(offline now) A fighting gear company I started",
-        "image":"02.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Original Thai Food",
-        "category":"Website I built for a restaurant I like in Thailand",
-        "image":"03.jpg",
-        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
-      },
-      {
-        "title":"Resume Website",
-        "category":"A React based resume website template",
-        "image":"04.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Smirkspace",
-        "category":"(MVP Only) A React and Meteor based chat University project.",
-        "image":"05.jpg",
-        "url":"http://www.smirkspace.com"
-      },
-      {
-        "title":"Canadian Wanderlust",
-        "category":"My Travel Blog for my post-university travels",
-        "image":"06.jpg",
-        "url":"https://www.canadianwanderlust.com"
-      },
-      {
-        "title":"Fury Fighting Gear",
-        "category":"(offline now) A fighting gear company I started",
-        "image":"01.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Original Thai Food",
-        "category":"Website I built for a restaurant I like in Thailand",
-        "image":"02.jpg",
-        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
-      },
-      {
-        "title":"Original Thai Food",
-        "category":"Website I built for a restaurant I like in Thailand",
-        "image":"03.jpg",
-        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
-      },
-      {
-        "title":"Resume Website",
-        "category":"A React based resume website template",
-        "image":"04.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Smirkspace",
-        "category":"(MVP Only) A React and Meteor based chat University project.",
-        "image":"05.jpg",
-        "url":"http://www.smirkspace.com"
-      },
-      {
-        "title":"Canadian Wanderlust",
-        "category":"My Travel Blog for my post-university travels",
-        "image":"06.jpg",
-        "url":"https://www.canadianwanderlust.com"
+        "title":"The Original Fare",
+        "category":"Join Kelly Cox, creator of The Original Fare, as she hunts, forages, and farms her way across the globe to search for the best ingredients our planet has to offer",
+        "image":"OriginalFare.jpg",
+        "url":"https://www.pbs.org/show/original-fare/"
       }
     ]
   }
