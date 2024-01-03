@@ -1,0 +1,20 @@
+{
+  "testimonials": [
+    {
+      "user": "John Doe",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam."
+    },
+    {
+      "user": "Jane Smith",
+      "text": "Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta."
+    },
+    {
+      "user": "Alex Johnson",
+      "text": "Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla porttitor accumsan tincidunt."
+    },
+    {
+      "user": "Emily Davis",
+      "text": "Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui."
+    }
+  ]
+}
