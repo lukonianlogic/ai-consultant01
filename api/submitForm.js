@@ -13,8 +13,8 @@ const transporter = nodemailer.createTransport({
   port: 587, // Port for SMTP
   secure: false, // Set to true for secure connections (e.g., when using Gmail)
   auth: {
-    user: 'lucas.longacre@gmail.com', // Your email address
-    pass: 'txfu nhka ljsf qrva', // Your email password or app-specific password (if applicable)
+    user: '', // Your email address
+    pass: '', // Your email password or app-specific password (if applicable)
   },
 });
 
