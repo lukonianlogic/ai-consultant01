@@ -2,6 +2,24 @@ import React, { Component } from "react";
 import { Fade, Slide } from "react-reveal";
 
 class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      // Initialize state properties for form fields
+      contactName: "",
+      contactEmail: "",
+      contactSubject: "",
+      contactMessage: "",
+    };
+  }
+  
+  handleChange = (e) => {
+    const { name, value } = e.target;
+    this.setState({
+      [name]: value,
+    });
+  };
+
   render() {
     if (!this.props.data) return null;
 
@@ -32,7 +50,7 @@ class Contact extends Component {
         <div className="row">
           <Slide left duration={1000}>
             <div className="eight columns">
-              <form action="" method="post" id="contactForm" name="contactForm">
+              <form action="/submit-form" method="post" id="contactForm" name="contactForm">
                 <fieldset>
                   <div>
                     <label htmlFor="contactName">
@@ -40,7 +58,7 @@ class Contact extends Component {
                     </label>
                     <input
                       type="text"
-                      defaultValue=""
+                      value={this.state.contactName}
                       size="35"
                       id="contactName"
                       name="contactName"
@@ -54,7 +72,7 @@ class Contact extends Component {
                     </label>
                     <input
                       type="text"
-                      defaultValue=""
+                      value={this.state.contactEmail}
                       size="35"
                       id="contactEmail"
                       name="contactEmail"
@@ -66,7 +84,7 @@ class Contact extends Component {
                     <label htmlFor="contactSubject">Subject</label>
                     <input
                       type="text"
-                      defaultValue=""
+                      value={this.state.contactSubject}
                       size="35"
                       id="contactSubject"
                       name="contactSubject"
@@ -81,8 +99,10 @@ class Contact extends Component {
                     <textarea
                       cols="50"
                       rows="15"
+                      value={this.state.contactMessage}
                       id="contactMessage"
                       name="contactMessage"
+                      onChange={this.handleChange}
                     ></textarea>
                   </div>
 
