@@ -68,7 +68,8 @@ class Contact extends Component {
               <textarea name="message" />
             </div>
             <div className="form-button">
-              <input type="submit" value="Send" />
+            <input type="submit" value="Send" className="send-button" />
+
             </div>
               </form>
 

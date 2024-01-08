@@ -15,4 +15,27 @@
   max-width: 500px;
 }
 
+/* Define the default button style (orange) */
+.send-button {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Change button color to blue on hover */
+.send-button:hover {
+  background-color: blue;
+  color: white;
+}
+
+/* Change button color to blue on click */
+.send-button:active {
+  background-color: blue;
+  color: white;
+}
+
+
 /* Adjust as needed for spacing and alignment */
