@@ -1,0 +1,18 @@
+/* Add this CSS to your component or stylesheet */
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-input {
+  flex: 1;
+}
+
+.form-button {
+  flex: 1;
+  text-align: right;
+  max-width: 500px;
+}
+
+/* Adjust as needed for spacing and alignment */

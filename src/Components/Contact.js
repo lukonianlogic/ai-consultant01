@@ -1,36 +1,40 @@
 import React, { Component } from "react";
-import { Fade, Slide } from "react-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
+import emailjs from "@emailjs/browser";
+
+const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+const userId = process.env.REACT_APP_EMAILJS_USER_ID;
 
 class Contact extends Component {
   constructor(props) {
     super(props);
+
     this.state = {
-      // Initialize state properties for form fields
-      contactName: "",
-      contactEmail: "",
-      contactSubject: "",
-      contactMessage: "",
+      message: "",
     };
+
+    this.form = React.createRef();
   }
-  
-  handleChange = (e) => {
-    const { name, value } = e.target;
-    this.setState({
-      [name]: value,
-    });
+
+  sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(serviceId, templateId, this.form.current, userId)
+      .then(
+        (result) => {
+          console.log(result.text);
+          this.setState({ message: "Your message was sent, thank you!" });
+        },
+        (error) => {
+          console.log(error.text);
+          this.setState({ message: "Error sending the message" });
+        }
+      );
   };
 
   render() {
-    if (!this.props.data) return null;
-
-    const name = this.props.data.name;
-    const street = this.props.data.address.street;
-    const city = this.props.data.address.city;
-    const state = this.props.data.address.state;
-    const zip = this.props.data.address.zip;
-    const phone = this.props.data.phone;
-    const message = this.props.data.contactmessage;
-
     return (
       <section id="contact">
         <Fade bottom duration={1000}>
@@ -42,7 +46,7 @@ class Contact extends Component {
             </div>
 
             <div className="ten columns">
-              <p className="lead">{message}</p>
+              <p className="lead">{this.state.message}</p>
             </div>
           </div>
         </Fade>
@@ -50,69 +54,22 @@ class Contact extends Component {
         <div className="row">
           <Slide left duration={1000}>
             <div className="eight columns">
-              <form action="/submit-form" method="post" id="contactForm" name="contactForm">
-                <fieldset>
-                  <div>
-                    <label htmlFor="contactName">
-                      Name <span className="required">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      value={this.state.contactName}
-                      size="35"
-                      id="contactName"
-                      name="contactName"
-                      onChange={this.handleChange}
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="contactEmail">
-                      Email <span className="required">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      value={this.state.contactEmail}
-                      size="35"
-                      id="contactEmail"
-                      name="contactEmail"
-                      onChange={this.handleChange}
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="contactSubject">Subject</label>
-                    <input
-                      type="text"
-                      value={this.state.contactSubject}
-                      size="35"
-                      id="contactSubject"
-                      name="contactSubject"
-                      onChange={this.handleChange}
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="contactMessage">
-                      Message <span className="required">*</span>
-                    </label>
-                    <textarea
-                      cols="50"
-                      rows="15"
-                      value={this.state.contactMessage}
-                      id="contactMessage"
-                      name="contactMessage"
-                      onChange={this.handleChange}
-                    ></textarea>
-                  </div>
-
-                  <div>
-                    <button className="submit">Submit</button>
-                    <span id="image-loader">
-                      <img alt="" src="images/loader.gif" />
-                    </span>
-                  </div>
-                </fieldset>
+              <form ref={this.form} onSubmit={this.sendEmail}>
+              <div className="form-input">
+              <label>Name</label>
+              <input type="text" name="user_name" />
+            </div>
+            <div className="form-input">
+              <label>Email</label>
+              <input type="email" name="user_email" />
+            </div>
+            <div className="form-input">
+              <label>Message</label>
+              <textarea name="message" />
+            </div>
+            <div className="form-button">
+              <input type="submit" value="Send" />
+            </div>
               </form>
 
               <div id="message-warning"> Error boy</div>
@@ -126,44 +83,12 @@ class Contact extends Component {
           <Slide right duration={1000}>
             <aside className="four columns footer-widgets">
               <div className="widget widget_contact">
-                <h4>Address and Phone</h4>
-                <p className="address">
-                  {name}
+                <h4>Contact Information</h4>
+                <p>
+                  <span>Phone: 917-916-3979</span>
                   <br />
-                  {street} <br />
-                  {city}, {state} {zip}
-                  <br />
-                  <span>{phone}</span>
+                  <span>Email: lucas.longacre@gmail.com</span>
                 </p>
-              </div>
-
-              <div className="widget widget_tweets">
-                <h4 className="widget-title">Latest Tweets</h4>
-                <ul id="twitter">
-                  <li>
-                    <span>
-                      This is Photoshop's version of Lorem Ipsum. Proin gravida
-                      nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
-                      quis bibendum auctor, nisi elit consequat ipsum
-                      <a href="./">https://twitter.com/lukonianlogic</a>
-                    </span>
-                    <b>
-                      <a href="./">2 Days Ago</a>
-                    </b>
-                  </li>
-                  <li>
-                    <span>
-                      Sed ut perspiciatis unde omnis iste natus error sit
-                      voluptatem accusantium doloremque laudantium, totam rem
-                      aperiam, eaque ipsa quae ab illo inventore veritatis et
-                      quasi
-                      <a href="./">http://t.co/CGIrdxIlI3</a>
-                    </span>
-                    <b>
-                      <a href="./">3 Days Ago</a>
-                    </b>
-                  </li>
-                </ul>
               </div>
             </aside>
           </Slide>
