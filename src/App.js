@@ -9,7 +9,6 @@ import Resume from "./Components/Resume";
 import Contact from "./Components/Contact";
 import Portfolio from "./Components/Portfolio";
 import Testimonials from "./Components/Testimonials";
-import sitePreviewImage from "./images/LucasLongacre_site_preview.jpg";
 import { Helmet } from "react-helmet";
 
 
@@ -75,7 +74,8 @@ class App extends Component {
                   content="AI consultant, product manager, full stack developer, innovative solutions, business success, AI, product management, software development"
                 />
                 <meta name="author" content="Lucas Longacre" />
-                <meta property="og:image" content={sitePreviewImage} />
+                <meta property="og:image" content={`${process.env.PUBLIC_URL}/css/images/LucasLongacre_site_preview.jpg`} />
+
 
               </Helmet>
 
