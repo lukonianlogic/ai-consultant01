@@ -74,7 +74,7 @@ class App extends Component {
                   content="AI consultant, product manager, full stack developer, innovative solutions, business success, AI, product management, software development"
                 />
                 <meta name="author" content="Lucas Longacre" />
-                <meta property="og:image" content={`${process.env.PUBLIC_URL}/css/images/LucasLongacre_site_preview.jpg`} />
+                <meta property="og:image" content={`https://d1.dropbox.com/scl/fi/x7zjx1qi0ftxx7uj9p9r1/LucasLongacre_site_preview.jpg`} />
 
 
               </Helmet>
