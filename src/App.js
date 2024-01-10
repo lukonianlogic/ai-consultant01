@@ -63,22 +63,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-               <Helmet>
-                <title>Lucas Longacre - AI Consultant, Product Manager, Full Stack Developer</title>
-                <meta
-                  name="description"
-                  content="Experienced AI consultant, product manager, and full stack developer. Crafting innovative solutions and driving business success in AI, product management, and software development. Explore my portfolio and resume."
-                />
-                <meta
-                  name="keywords"
-                  content="AI consultant, product manager, full stack developer, innovative solutions, business success, AI, product management, software development"
-                />
-                <meta name="author" content="Lucas Longacre" />
-                <meta property="og:image" content={`https://d1.dropbox.com/scl/fi/x7zjx1qi0ftxx7uj9p9r1/LucasLongacre_site_preview.jpg`} />
-
-
-              </Helmet>
-
         <Header data={this.state.resumeData.main} />
         <About data={this.state.resumeData.main} />
         <Portfolio data={this.state.resumeData.portfolio} />
