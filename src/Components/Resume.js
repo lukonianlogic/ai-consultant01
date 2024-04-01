@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Slide from "react-awesome-reveal";
+import LL_certificate from "../images/LL_certificate.png";
 
 class Resume extends Component {
   getRandomColor() {
@@ -24,6 +25,9 @@ class Resume extends Component {
             <em className="date">{education.graduated}</em>
           </p>
           <p>{education.description}</p>
+          {education.school === "UT Austin" && (
+            <img src={LL_certificate} alt="UT Austin Certificate" />
+          )}
         </div>
       );
     });
